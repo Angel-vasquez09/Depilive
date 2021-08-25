@@ -1,0 +1,248 @@
+
+:root{
+    --poppins: 'Poppins', sans-serif;
+    --color-1: #ED2560; 
+    --color-2: #ffffff; 
+    --color-3: #E19BB0; 
+}
+
+/* 
+*ESTILOS DEl BANNER */
+
+.banner{
+    background-image: url("https://centrodesaludybelleza.co/wp-content/uploads/2019/12/massage-22.jpg");
+    background-size: 100% 100%;
+    background-position: center;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+    transition: all 300ms;
+}
+.banner::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #dc359994;
+    z-index: 2;
+}
+.banner .text{
+    position: relative;
+    z-index: 3;
+    color: var(--color-2);
+}
+.banner strong{
+    color: var(--color-1);
+}
+
+.banner button{
+    width: 7rem;
+    height: 3rem;
+    border: 0;
+    background: var(--color-1);
+    color: var(--color-2);
+}
+.banner button:hover{
+    background: var(--color-3);
+    border: 2px solid var(--color-1);
+}
+
+
+/* 
+*ESTILOS DE NAV */
+.num{
+    width : 100%;
+    height: 50px;
+    background: hsl(350deg 86% 97%);
+    position: relative;
+    z-index: -2;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+.num small{
+    margin-right: 1rem;
+}
+
+.active{
+    background: var(--color-3) !important;
+}
+nav{
+    width : 100%;
+    height: 65px;
+    background: var(--color-1) !important;
+    box-shadow: -1px 5px 8px #c91f52;
+}
+    nav .navbar-nav{
+        flex-direction: row;
+    }
+    nav .logo{
+        position: absolute;
+        width     : 245px;
+        height    : 162px;
+        top       : -42px;
+        background: white;
+        display   : inline;
+        align-items: center;
+        
+    }
+        .div1, .div2{
+            width     : 245px; 
+            height    : 45px; 
+            position  : absolute; 
+            background: var(--color-1) !important;
+            z-index: -1;
+            
+        }
+        .div1{
+            right: -4px;
+            top  : -4px;
+        }
+        .div2{
+            bottom: -5px;
+            left  : -4px;
+        }
+    
+    nav ul li a{
+        font-family: var(--poppins);
+        font-weight: 500;
+        width: 6rem;
+        color: var(--color-2) !important;
+    }
+    nav ul li a:hover{
+        background: var(--color-3) !important;
+    }
+
+
+/* 
+ *ESTILOS DEL LANDING 
+*/
+.landing{
+    height: 530px;
+    position: relative;
+    z-index: -3;
+}
+.landing img{
+    height: 100%;
+    background-position: center;
+}
+.landing .description{
+    left: 15rem;
+    bottom: 10rem;
+    min-width: 10rem;
+    max-width: 20rem;
+}
+.description h2{
+    font-family: var(--poppins);
+}
+.description h2 strong{
+    color: var(--color-1);
+}
+.description p{
+    font-family: var(--poppins);
+
+}
+
+
+
+/* 
+?ESTILOS DE SERVICIOS
+*/
+.servicios{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 18rem;
+}
+.descripcion-servicios {
+    max-width: 50%;
+}
+.descripcion-servicios h2{
+    font-family: var(--poppins);
+    font-weight: 600;
+    position: relative;
+}
+.descripcion-servicios h2 small{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: var(--color-3);
+    z-index: -1;
+}
+.descripcion-servicios p{
+    font-family: var(--poppins);
+    font-weight: 300;
+}
+
+.card{
+    width: 346px;
+    height: 594px;
+    padding: 1.5rem;
+    border: 0 !important;
+    box-shadow:  -5px 5px 24px #d4d4d4, 5px -5px 24px #ffffff;
+}
+.border__{
+    width: 10rem;
+    height: 15rem;
+    border: 3px solid var(--color-1) !important;
+    z-index: -2;
+    bottom: -22px;
+    left: -44px;
+}
+
+.card img{
+    width: 304px;
+    height: 270px;
+    object-fit: cover;
+    background-position: center;
+}
+.card h2{
+    font-family: var(--poppins);
+    font-weight: 500;
+    font-size: 18px;
+}
+.card button{
+    width: 135px;
+    height: 39px;
+    position: relative;
+    border: 0;
+    
+    background: var(--color-1);
+    color: var(--color-2);
+    border-radius: 10px;
+}
+
+/* 
+* ESTILOS DE FOOTER
+*/
+
+footer{
+    height: 160px;
+    margin-left: 0 !important;
+    margin-right: 0!important;
+    margin-top: 150px !important;
+    margin-bottom: 50px !important;
+    background: var(--color-1);
+    color: white;
+    box-shadow: 0px -9px 8px #ffa9c3;
+}
+footer img{
+    object-fit: contain;
+    border-radius: 30px;
+}
+footer p{
+    font-size: 12px;
+    margin: 0;
+    margin-top: 1rem;
+}
+
+footer a{
+    color: white;
+    font-family: var(--poppins);
+    font-weight: 500;
+    
+}
